@@ -4,8 +4,44 @@
   height: 90vh;
   border-radius: 1.2rem;
   overflow: hidden;
-  background-image: linear-gradient(0deg, transparent 66%, #33333399 100%), url(../../assets/homepage_bg.webp);
-  background-position: bottom;
+  background-image: linear-gradient(270deg, transparent 26%, #11111199 100%), url(../../assets/homepage_bg.webp);
+  background-position: 100% 85%;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.section {
+  width: 40vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  align-self: flex-start;
+  padding: 0 4vw;
+  gap: 2rem;
+}
+
+.section h1 {
+  color: var(--white);
+  font-size: 5.2rem;
+  font-weight: 500;
+  letter-spacing: -2px;
+  line-height: 1.1;
+}
+.section h1 span {
+  color: var(--brand-2);
+  font-weight: 700;
+  font-size: 5.6rem;
+}
+
+.section p {
+  color: var(--white);
+  font-size: 2.1rem;
+  font-weight: 400;
+  line-height: 1.5;
 }

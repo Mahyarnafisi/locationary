@@ -5,8 +5,13 @@ function HomePage() {
   return (
     <main className={Styles.homepage}>
       <PageNav />
-      <h1>home page</h1>
-      <Link to="app">To the APP</Link>
+      <section className={Styles.section}>
+        <h1>
+          You travels the World <span>Locationary</span> will track your adventures.
+        </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat minus animi aut illum voluptatum voluptas amet corporis expedita dignissimos ipsam pariatur repellendus, fuga, quasi aliquid obcaecati neque? Libero, hic illum?</p>
+        <Link to="app">To the APP</Link>
+      </section>
     </main>
   );
 }

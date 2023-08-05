@@ -1,5 +1,5 @@
 .pricing {
-  border: 1px solid red;
+  background-color: var(--gray);
   height: 100%;
   width: 95vw;
   height: 90vh;

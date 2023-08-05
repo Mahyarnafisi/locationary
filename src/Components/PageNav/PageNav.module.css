@@ -6,7 +6,8 @@
   height: 10rem;
   padding: 0 4vw;
   backdrop-filter: blur(5px);
-  box-shadow: 0 1rem 3rem #00000015;
+  box-shadow: 0 1rem 5rem #00000010;
+  border-bottom: 2px solid #ffffff20;
 }
 
 .page_nav ul {
@@ -20,7 +21,7 @@
 }
 
 :global(.active) {
-  background-color: var(--brand-1);
+  background-color: var(--brand-3);
   color: var(--white);
 }
 
@@ -28,8 +29,7 @@
   color: var(--white);
   text-decoration: none;
   padding: 1.5rem;
-  height: 5.6rem;
-  border-radius: 1.2rem;
+  border-radius: 0.7rem;
   font-size: 2.1rem;
   font-weight: 700;
 }
