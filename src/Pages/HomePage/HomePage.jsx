@@ -10,7 +10,9 @@ function HomePage() {
           You travels the World <span>Locationary</span> will track your adventures.
         </h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat minus animi aut illum voluptatum voluptas amet corporis expedita dignissimos ipsam pariatur repellendus, fuga, quasi aliquid obcaecati neque? Libero, hic illum?</p>
-        <Link to="app">To the APP</Link>
+        <Link className={Styles.btn} to="app">
+          Start tracking now <i class="bi bi-chevron-right"></i>
+        </Link>
       </section>
     </main>
   );

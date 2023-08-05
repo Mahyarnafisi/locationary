@@ -5,4 +5,8 @@
   height: 90vh;
   border-radius: 1.2rem;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
 }
