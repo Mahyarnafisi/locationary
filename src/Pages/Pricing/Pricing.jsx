@@ -1,6 +1,7 @@
 import PageNav from "../../Components/PageNav/PageNav";
 import { Link } from "react-router-dom";
 import Styles from "./Pricing.module.css";
+import saveMoneyImage from "../../assets/savemoney__pricing.png";
 function Pricing() {
   return (
     <div className={Styles.pricing}>
@@ -12,6 +13,7 @@ function Pricing() {
           </h1>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloremque iusto commodi consectetur quibusdam? Doloribus.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel similique repellendus ipsam quasi.</p>
+          <img src={saveMoneyImage} alt="" />
         </div>
         <div className={Styles.title}>
           <div className={Styles.title__header}>
@@ -21,7 +23,7 @@ function Pricing() {
             </h1>
           </div>
           <div className={Styles.title__readMore}>
-            <p>Are you intrusted?</p>
+            <p>Are you interested?</p>
             <Link to="/products" className={Styles.title__link}>
               Read More
             </Link>
