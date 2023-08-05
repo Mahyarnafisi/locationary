@@ -1,5 +1,5 @@
 .pricing {
-  background-color: var(--gray);
+  background-color: var(--gray-2);
   height: 100%;
   width: 95vw;
   height: 90vh;
@@ -17,14 +17,14 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-gap: 4rem;
+  grid-gap: 3rem;
 }
 .saveMoney {
   background-color: var(--brand-3);
   grid-column: 1/2;
   grid-row: 1/-1;
-  border-radius: 0.6rem;
-  padding: 4rem;
+  border-radius: 1.2rem;
+  padding: 3rem;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -37,10 +37,12 @@
 .title {
   grid-column: 2/-1;
   grid-row: 1/2;
-  background-color: var(--gray);
-  border-radius: 0.6rem;
-  /* padding: 2rem; */
-  color: var(--white);
+  /* background-color: var(--gray); */
+  border-radius: 1.2rem;
+  border: 2px solid var(--gray);
+  padding: 2rem;
+  border-radius: 1.2rem;
+  color: var(--gray);
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -70,9 +72,13 @@
 .freePlan {
   grid-column: 2/3;
   grid-row: 2/-1;
-  background-color: var(--gray-2);
-  border-radius: 0.6rem;
+  background-color: var(--white);
+  border-radius: 1.2rem;
   padding: 4rem;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-direction: column;
 }
 .freePlan__header {
   display: flex;
@@ -88,6 +94,7 @@
 .freePlan__body h4 {
   font-size: 2.1rem;
   margin-bottom: 2rem;
+  opacity: 50%;
 }
 
 .freePlan__body p {
@@ -120,8 +127,57 @@
   grid-column: 3/-1;
   grid-row: 2/-1;
   background-color: var(--brand-1);
+  border-radius: 1.2rem;
+  padding: 4rem;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.proPlan__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solid var(--white);
+  color: var(--white);
+}
+
+.proPlan__body {
+  padding: 2rem 0;
+  color: var(--white);
+}
+
+.proPlan__body h4 {
+  font-size: 2.1rem;
+  margin-bottom: 2rem;
+  opacity: 50%;
+}
+
+.proPlan__body p {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.proPlan__btn {
+  cursor: pointer;
+  padding: 1.5rem;
+  background-color: var(--white);
+  color: var(--brand-1);
   border-radius: 0.6rem;
-  padding: 2rem;
+  font-size: 2.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  transition: all 0.2s;
+}
+
+.proPlan__btn:hover {
+  filter: brightness(130%);
 }
 
 .saveMoney__title {

@@ -49,11 +49,34 @@ function Pricing() {
               <i class="bi bi-check"></i> &nbsp; Lorem ipsum dolor sit, sectetur adipisicing.
             </p>
           </div>
-          <Link className={Styles.freePlan__btn} to="login">
+          <Link className={Styles.freePlan__btn} to="/login">
             Login
           </Link>
         </div>
-        <div className={Styles.proPlan}>pro</div>
+        <div className={Styles.proPlan}>
+          <div className={Styles.proPlan__header}>
+            <h2>Pro Plan</h2>
+            <h2>29$</h2>
+          </div>
+          <div className={Styles.proPlan__body}>
+            <h4>All includes list:</h4>
+            <p>
+              <i class="bi bi-check"></i> &nbsp;Lorem ipsum dolor sit amet. lorem
+            </p>
+            <p>
+              <i class="bi bi-check"></i> &nbsp; Lorem ipsum dolor sit amet consectetur.
+            </p>
+            <p>
+              <i class="bi bi-check"></i> &nbsp; Lorem ipsum dolor sit.
+            </p>
+            <p>
+              <i class="bi bi-check"></i> &nbsp; Lorem ipsum dolor sit, sectetur adipisicing.
+            </p>
+          </div>
+          <Link className={Styles.proPlan__btn} to="/login">
+            Try Pro Plan
+          </Link>
+        </div>
       </section>
     </div>
   );
