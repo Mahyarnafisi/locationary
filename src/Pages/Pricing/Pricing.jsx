@@ -29,7 +29,30 @@ function Pricing() {
             </Link>
           </div>
         </div>
-        <div className={Styles.freePlan}>free</div>
+        <div className={Styles.freePlan}>
+          <div className={Styles.freePlan__header}>
+            <h2>Free Plan</h2>
+            <h3>Free</h3>
+          </div>
+          <div className={Styles.freePlan__body}>
+            <h4>Plan included:</h4>
+            <p>
+              <i class="bi bi-check"></i> &nbsp;Lorem ipsum dolor sit amet.
+            </p>
+            <p>
+              <i class="bi bi-check"></i> &nbsp; Lorem ipsum dolor sit amet consectetur.
+            </p>
+            <p>
+              <i class="bi bi-check"></i> &nbsp; Lorem ipsum dolor sit.
+            </p>
+            <p>
+              <i class="bi bi-check"></i> &nbsp; Lorem ipsum dolor sit, sectetur adipisicing.
+            </p>
+          </div>
+          <Link className={Styles.freePlan__btn} to="login">
+            Login
+          </Link>
+        </div>
         <div className={Styles.proPlan}>pro</div>
       </section>
     </div>
