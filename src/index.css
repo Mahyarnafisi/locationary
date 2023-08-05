@@ -11,4 +11,27 @@ html {
 }
 
 body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  height: 5.6rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  filter: brightness(120%);
+}
+li {
+  list-style: none;
+  text-decoration: none;
 }

@@ -1,0 +1,8 @@
+.login {
+  border: 1px solid red;
+  height: 100%;
+  width: 95vw;
+  height: 90vh;
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
