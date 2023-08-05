@@ -1,0 +1,10 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo h2 {
+  font-size: 3.2rem;
+  color: var(--white);
+}

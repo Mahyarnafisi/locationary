@@ -1,6 +1,12 @@
 .page_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
-  border: 2px dotted green;
+  height: 10rem;
+  padding: 0 4vw;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 1rem 3rem #00000015;
 }
 
 .page_nav ul {
@@ -8,4 +14,25 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
+}
+
+.page_nav li {
+}
+
+:global(.active) {
+  background-color: var(--brand-1);
+  color: var(--white);
+}
+
+.nav_link {
+  color: var(--white);
+  text-decoration: none;
+  padding: 1.5rem;
+  height: 5.6rem;
+  border-radius: 1.2rem;
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+.link {
+  text-decoration: none;
 }
