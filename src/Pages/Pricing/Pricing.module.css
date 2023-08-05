@@ -10,3 +10,88 @@
   justify-content: flex-start;
   flex-direction: column;
 }
+.planes {
+  width: 100%;
+  height: 100%;
+  padding: 4rem 4vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 3rem;
+}
+.saveMoney {
+  background-color: var(--brand-3);
+  grid-column: 1/2;
+  grid-row: 1/-1;
+  border-radius: 0.6rem;
+  padding: 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.title {
+  grid-column: 2/-1;
+  grid-row: 1/2;
+  background-color: var(--gray);
+  border-radius: 0.6rem;
+  /* padding: 2rem; */
+  color: var(--white);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.title__header h1 {
+  font-weight: 100;
+  line-height: 1;
+}
+.title__header h1 span {
+  font-weight: 700;
+  color: var(--brand-1);
+}
+
+.title__readMore {
+  font-size: 2.1rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-self: flex-start;
+}
+.title__link {
+  color: var(--white);
+}
+.freePlan {
+  grid-column: 2/3;
+  grid-row: 2/-1;
+  background-color: var(--gray-2);
+  border-radius: 0.6rem;
+  padding: 2rem;
+}
+
+.proPlan {
+  grid-column: 3/-1;
+  grid-row: 2/-1;
+  background-color: var(--brand-1);
+  border-radius: 0.6rem;
+  padding: 2rem;
+}
+
+.saveMoney__title {
+  color: var(--white);
+  font-weight: 100;
+  line-height: 1;
+}
+
+.saveMoney__title span {
+  font-weight: 700;
+  font-size: 7.8rem;
+}
+
+.saveMoney p {
+  font-size: 2.1rem;
+  color: var(--white);
+}

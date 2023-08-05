@@ -2,8 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
 }
 .logo img {
+  filter: contrast(120%);
   width: 20%;
   height: auto;
 }

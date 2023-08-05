@@ -3,12 +3,12 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 10rem;
+  height: 12rem;
   padding: 0 4vw;
   backdrop-filter: blur(8px);
-  box-shadow: 0 1rem 5rem #00000010;
-  border-bottom: 2px solid #ffffff30;
-  background-color: #00000025;
+  box-shadow: 0 2rem 5rem #00000010;
+  border-bottom: 1px solid #ffffff10;
+  background-color: #00000035;
 }
 
 .page_nav ul {
@@ -23,6 +23,7 @@
 
 :global(.active) {
   color: var(--brand-1) !important;
+  font-weight: 600 !important;
 }
 
 .nav_link {
