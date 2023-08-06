@@ -1,5 +1,5 @@
 .pricing {
-  background-color: var(--gray-2);
+  background-color: var(--gray);
   height: 100%;
   width: 95vw;
   height: 90vh;
@@ -39,10 +39,10 @@
   grid-row: 1/2;
   /* background-color: var(--gray); */
   border-radius: 1.2rem;
-  border: 2px solid var(--gray);
+
   padding: 2rem;
   border-radius: 1.2rem;
-  color: var(--gray);
+  color: var(--white);
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -67,7 +67,7 @@
   align-self: flex-start;
 }
 .title__link {
-  color: var(--white);
+  color: var(--gray-2);
 }
 .freePlan {
   grid-column: 2/3;
