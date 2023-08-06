@@ -1,31 +1,43 @@
+import React, { useState } from "react";
 import styles from "./Login.module.css";
 import brandLogo from "../../assets/brand_icon.png";
 import userImage from "../../assets/user_img.jpg";
 import PageNav from "../../Components/PageNav/PageNav";
 
 function Login() {
+  const [inputEmail, setInputEmail] = useState("example@email.com");
+  const [inputPassword, setInputPassword] = useState(12345);
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    const data = {
+      email: inputEmail,
+      password: inputPassword,
+    };
+  };
+
   return (
     <div className={styles.login}>
       <PageNav />
 
       <section className={styles.section}>
         <div className={styles.warper}>
-          <form className={styles.form}>
+          <form className={styles.form} onSubmit={submitHandler}>
             <img src={brandLogo} alt="" />
             <h2>Login here:</h2>
             <br />
             <label className={styles.form__label} htmlFor="email">
               Email:
             </label>
-            <input className={styles.form__input} type="email" id="email" />
+            <input className={styles.form__input} type="email" id="email" value={inputEmail} onChange={(e) => e.target.value} />
 
             <label className={styles.form__label} htmlFor="password">
               Password:
             </label>
-            <input className={styles.form__input} type="password" id="password" />
+            <input className={styles.form__input} type="password" id="password" value={inputPassword} />
 
             <button type="submit" className={styles.submit__btn}>
-              Login Here
+              Login Here <i class="bi bi-chevron-right"></i>
             </button>
           </form>
 
