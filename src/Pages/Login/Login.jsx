@@ -14,6 +14,9 @@ function Login() {
       email: inputEmail,
       password: inputPassword,
     };
+
+    setInputEmail("");
+    setInputPassword("");
   };
 
   return (
