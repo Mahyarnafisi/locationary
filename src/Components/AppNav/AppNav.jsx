@@ -5,7 +5,7 @@ function AppNav() {
   return (
     <div className={Styles.appNav}>
       <ul>
-        <li>
+        <li id="li">
           <NavLink to="cities">Cities</NavLink>
         </li>
 

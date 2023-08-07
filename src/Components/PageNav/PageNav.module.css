@@ -18,12 +18,9 @@
   gap: 2rem;
 }
 
-.page_nav li {
-}
-
 :global(.active) {
   color: var(--brand-1) !important;
-  font-weight: 600 !important;
+  font-weight: 800 !important;
 }
 
 .nav_link {
