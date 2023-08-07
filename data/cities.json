@@ -1,0 +1,34 @@
+{
+  "cities": [
+    {
+      "city_name": "Tehran",
+      "country": "Iran",
+      "comment": "such bullshit city",
+      "position": {
+        "lat": 35.69439,
+        "lng": 51.42151
+      },
+      "id": 1
+    },
+    {
+      "city_name": "Delhi",
+      "country": "India",
+      "comment": "great place and nice people",
+      "position": {
+        "lat": 28.65381,
+        "lng": 77.22897
+      },
+      "id": 2
+    },
+    {
+      "city_name": "Malmo",
+      "country": "Sweden",
+      "comment": "I like the culture there",
+      "position": {
+        "lat": 55.60389,
+        "lng": 13.00073
+      },
+      "id": 3
+    }
+  ]
+}
