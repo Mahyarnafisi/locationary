@@ -3,7 +3,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2rem 0;
 }
 .appNav ul {
   width: 100%;
@@ -31,7 +30,7 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: var(--gray-light);
+  color: var(--gray);
   font-weight: 600;
 }
 
