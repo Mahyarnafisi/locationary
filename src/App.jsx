@@ -28,7 +28,7 @@ function App() {
     }
     fetchCities();
   }, []);
-  console.log(cities);
+
   return (
     <BrowserRouter>
       <Routes>

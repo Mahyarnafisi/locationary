@@ -39,6 +39,26 @@
         "lng": 28.94966
       },
       "id": 4
+    },
+    {
+      "city_name": "Lund",
+      "country": "Sweden",
+      "comment": "I like the culture there",
+      "position": {
+        "lat": 55.60389,
+        "lng": 13.00073
+      },
+      "id": 5
+    },
+    {
+      "city_name": "Ankara",
+      "country": "Turkey",
+      "comment": "Awesome place to be with family",
+      "position": {
+        "lat": 41.01384,
+        "lng": 28.94966
+      },
+      "id": 6
     }
   ]
 }
