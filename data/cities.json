@@ -45,8 +45,8 @@
       "country": "Sweden",
       "comment": "I like the culture there",
       "position": {
-        "lat": 55.60389,
-        "lng": 13.00073
+        "lat": 55.704659,
+        "lng": 13.191007
       },
       "id": 5
     },
@@ -55,8 +55,8 @@
       "country": "Turkey",
       "comment": "Awesome place to be with family",
       "position": {
-        "lat": 41.01384,
-        "lng": 28.94966
+        "lat": 39.933365,
+        "lng": 32.859741
       },
       "id": 6
     },
@@ -65,8 +65,8 @@
       "country": "Sweden",
       "comment": "Cold but beautiful",
       "position": {
-        "lat": 41.01384,
-        "lng": 28.94966
+        "lat": 59.329323,
+        "lng": 18.068581
       },
       "id": 7
     }

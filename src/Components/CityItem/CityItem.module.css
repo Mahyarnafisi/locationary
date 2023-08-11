@@ -9,6 +9,8 @@
   transition: all 0.2s;
   color: var(--gray);
   font-weight: 600;
+  margin-bottom: 1rem;
+  text-decoration: none;
 }
 .cityItem:hover {
   filter: brightness(120%);
@@ -22,10 +24,6 @@
 
 .cityItem p {
   font-size: 1.8rem;
-}
-
-.cityItem:not(:last-child) {
-  margin-bottom: 1rem;
 }
 
 .country {

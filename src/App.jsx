@@ -8,6 +8,7 @@ import Login from "./Pages/Login/Login";
 import AppLayout from "./Pages/AppLayout/AppLayout";
 import CityList from "./Components/CityList/CityList";
 import CountriesList from "./Components/CountriesList/CountriesList";
+import City from "./Components/City/City";
 const url = "http://localhost:9000";
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
         <Route path="/app" element={<AppLayout />}>
           <Route index element={<CityList isLoading={isLoading} cities={cities} />} />
           <Route path="cities" element={<CityList isLoading={isLoading} cities={cities} />} />
+          <Route path="cities/:city_name" element={<City cities={cities} />} />
           <Route path="countries" element={<CountriesList isLoading={isLoading} countriesList={countriesList} />} />
         </Route>
         <Route path="*" element={<PageNotFound />} />
