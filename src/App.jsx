@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import HomePage from "./Pages/HomePage/HomePage";
 import PageNotFound from "./Pages/PageNotFound/PageNotFound";
 import Pricing from "./Pages/Pricing/Pricing";
@@ -7,10 +7,12 @@ import Products from "./Pages/Products/Products";
 import Login from "./Pages/Login/Login";
 import AppLayout from "./Pages/AppLayout/AppLayout";
 import CityList from "./Components/CityList/CityList";
+import CountriesList from "./Components/CountriesList/CountriesList";
 const url = "http://localhost:9000";
 
 function App() {
   const [cities, setCities] = useState([]);
+  const [countriesList, setCountriesList] = useState();
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(function () {
@@ -29,6 +31,15 @@ function App() {
     fetchCities();
   }, []);
 
+  useEffect(() => {
+    const countries = cities.filter((obj, index) => {
+      return !cities.slice(0, index).some((item) => item.country === obj.country);
+    });
+    setCountriesList(countries);
+  }, [cities]);
+
+  console.log(countriesList);
+  //
   return (
     <BrowserRouter>
       <Routes>
@@ -39,7 +50,7 @@ function App() {
         <Route path="/app" element={<AppLayout />}>
           <Route index element={<CityList isLoading={isLoading} cities={cities} />} />
           <Route path="cities" element={<CityList isLoading={isLoading} cities={cities} />} />
-          <Route path="countries" element={<p>Countries</p>} />
+          <Route path="countries" element={<CountriesList isLoading={isLoading} countriesList={countriesList} />} />
         </Route>
         <Route path="*" element={<PageNotFound />} />
       </Routes>

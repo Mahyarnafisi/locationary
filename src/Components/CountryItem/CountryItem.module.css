@@ -1,0 +1,27 @@
+.countryItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background-color: var(--gray-light);
+  border-radius: 0.6rem;
+  border: 2px solid transparent;
+  transition: all 0.2s;
+  color: var(--gray);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.countryItem:hover {
+  filter: brightness(120%);
+  border: 2px solid var(--gray);
+}
+
+.countryItem:hover button {
+  background-color: var(--gray);
+  color: var(--white);
+}
+
+.countryItem p {
+  font-size: 1.8rem;
+}

@@ -59,6 +59,16 @@
         "lng": 28.94966
       },
       "id": 6
+    },
+    {
+      "city_name": "Stockholm",
+      "country": "sweden",
+      "comment": "Cold but beautiful",
+      "position": {
+        "lat": 41.01384,
+        "lng": 28.94966
+      },
+      "id": 7
     }
   ]
 }
