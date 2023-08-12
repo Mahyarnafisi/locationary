@@ -4,7 +4,7 @@ function CityItem({ city }) {
   const { city_name, id, country, position } = city;
   return (
     <div>
-      <Link className={Styles.cityItem} to={`${city_name}?lat=${position.lat}&lng=${position.lng}`}>
+      <Link className={Styles.cityItem} to={`${id}?lat=${position.lat}&lng=${position.lng}`}>
         <p>
           {id}. {city_name}
         </p>
