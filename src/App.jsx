@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useState, useEffect, useCallback } from "react";
 import HomePage from "./Pages/HomePage/HomePage";
 import PageNotFound from "./Pages/PageNotFound/PageNotFound";
@@ -50,7 +50,7 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/login" element={<Login />} />
         <Route path="/app" element={<AppLayout />}>
-          <Route index element={<CityList isLoading={isLoading} cities={cities} />} />
+          <Route index element={<Navigate replace to="cities" />} />
           <Route path="cities" element={<CityList isLoading={isLoading} cities={cities} />} />
           <Route path="cities/:id" element={<City cities={cities} />} />
           <Route path="countries" element={<CountriesList isLoading={isLoading} countriesList={countriesList} />} />
