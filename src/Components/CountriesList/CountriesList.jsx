@@ -2,16 +2,18 @@ import Styles from "./CountriesList.module.css";
 
 import Spinner from "../Spinner/Spinner";
 import CountryItem from "../CountryItem/CountryItem";
+import { useCities } from "../../Contexts/CitiesContext";
 
-function CountriesList(props) {
-  if (props.isLoading) {
+function CountriesList() {
+  const { isLoading, countriesList } = useCities();
+  if (isLoading) {
     return <Spinner />;
   }
 
   return (
     <div className={Styles.countriesList}>
       <ul>
-        {props.countriesList.map((item) => {
+        {countriesList.map((item) => {
           return (
             <li key={item.id}>
               <CountryItem country={item.country} />

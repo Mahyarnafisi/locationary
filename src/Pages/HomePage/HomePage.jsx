@@ -1,8 +1,7 @@
 import PageNav from "../../Components/PageNav/PageNav";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Styles from "./HomePage.module.css";
 function HomePage() {
-  const navigate = useNavigate();
   return (
     <main className={Styles.homepage}>
       <PageNav />
