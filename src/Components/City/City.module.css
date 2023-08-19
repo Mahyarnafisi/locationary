@@ -33,3 +33,17 @@
 .btn__back:hover {
   filter: brightness(120%);
 }
+.badge {
+  padding: 1rem;
+  background-color: var(--gray-light);
+  align-self: flex-start;
+  border-radius: 0.6rem;
+}
+
+.comment {
+  font-size: 1.8rem;
+  padding: 1rem;
+  background-color: white;
+  margin: 1rem;
+  border-radius: 0.6rem;
+}

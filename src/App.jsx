@@ -11,36 +11,8 @@ import CountriesList from "./Components/CountriesList/CountriesList";
 import Form from "./Components/Form/Form";
 import City from "./Components/City/City";
 import { CitiesContext } from "./Contexts/CitiesContext";
-// const url = "http://localhost:9000";
 
 function App() {
-  // const [cities, setCities] = useState([]);
-  // const [countriesList, setCountriesList] = useState();
-  // const [isLoading, setIsLoading] = useState(false);
-
-  // useEffect(function () {
-  //   async function fetchCities() {
-  //     try {
-  //       setIsLoading(true);
-  //       const res = await fetch(`${url}/cities`);
-  //       const data = await res.json();
-  //       setCities(data);
-  //     } catch {
-  //       alert("there is a problem to fetch the data");
-  //     } finally {
-  //       setIsLoading(false);
-  //     }
-  //   }
-  //   fetchCities();
-  // }, []);
-
-  // useEffect(() => {
-  //   const countries = cities.filter((obj, index) => {
-  //     return !cities.slice(0, index).some((item) => item.country === obj.country);
-  //   });
-  //   setCountriesList(countries);
-  // }, [cities]);
-
   //
   return (
     <CitiesContext>
