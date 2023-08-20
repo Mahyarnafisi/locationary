@@ -69,6 +69,16 @@
         "lng": 18.068581
       },
       "id": 7
+    },
+    {
+      "city_name": "Abadan",
+      "country": "Iran",
+      "comment": "Wonderful people, great place to have fun, supper warm and you wont be regraded it if stay there for more then 10 days",
+      "position": {
+        "lat": 59.329323,
+        "lng": 18.068581
+      },
+      "id": 8
     }
   ]
 }

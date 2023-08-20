@@ -1,7 +1,9 @@
-import Styles from "./CityItem.module.css";
+import { useCities } from "../../Contexts/CitiesContext";
 import { Link } from "react-router-dom";
+import Styles from "./CityItem.module.css";
 function CityItem({ city }) {
   const { city_name, id, country, position } = city;
+
   return (
     <div>
       <Link className={Styles.cityItem} to={`${id}?lat=${position.lat}&lng=${position.lng}`}>
