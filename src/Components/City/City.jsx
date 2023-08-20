@@ -1,8 +1,10 @@
 import { useEffect } from "react";
+
 import { useCities } from "../../Contexts/CitiesContext";
 import { useParams, useNavigate } from "react-router-dom";
 import Spinner from "../Spinner/Spinner";
 import Styles from "./City.module.css";
+import Wiki from "./Wiki/Wiki";
 
 function City() {
   const { getCity, currentCity, isLoading } = useCities();
@@ -22,6 +24,7 @@ function City() {
       <br />
       <p>{`Here is last visitors think about ${currentCity.city_name}: `}</p>
       <p className={Styles.comment}>{currentCity.comment}</p>
+      <Wiki />
       <button className={Styles.btn__back} onClick={() => navigate(-1)}>
         Get back to city list
       </button>

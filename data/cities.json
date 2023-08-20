@@ -3,7 +3,7 @@
     {
       "city_name": "Tehran",
       "country": "Iran",
-      "comment": "such bullshit city",
+      "comment": "such bullshit city and I don't like it, and not recommend it to anyone",
       "position": {
         "lat": 35.69439,
         "lng": 51.42151
@@ -33,7 +33,7 @@
     {
       "city_name": "Istanbul",
       "country": "Turkey",
-      "comment": "Awesome place with many interested things to do",
+      "comment": "Awesome place with many interested things to do and see",
       "position": {
         "lat": 41.01384,
         "lng": 28.94966
@@ -43,7 +43,7 @@
     {
       "city_name": "Lund",
       "country": "Sweden",
-      "comment": "I like the culture there",
+      "comment": "I like the culture there and the people",
       "position": {
         "lat": 55.704659,
         "lng": 13.191007
@@ -53,7 +53,7 @@
     {
       "city_name": "Ankara",
       "country": "Turkey",
-      "comment": "Awesome place to be with family",
+      "comment": "Awesome place to be with family and friends and have fun",
       "position": {
         "lat": 39.933365,
         "lng": 32.859741
@@ -63,7 +63,7 @@
     {
       "city_name": "Stockholm",
       "country": "Sweden",
-      "comment": "Cold but beautiful",
+      "comment": "Cold but beautiful places to visit and have fun, all in one place and it is wonderful",
       "position": {
         "lat": 59.329323,
         "lng": 18.068581
