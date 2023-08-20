@@ -1,4 +1,26 @@
-.map {
-  width: 70%;
+.mapContainer {
+  width: 100%;
   height: 100%;
+  position: relative;
+}
+.locationCard {
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  left: 0;
+  margin: 1vw;
+  padding: 2rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 1rem 3rem #00000030;
+  font-size: 1.6rem;
+  background-color: var(--gray);
+  color: white;
+}
+
+.map {
+  height: 100%;
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  z-index: 99;
 }
