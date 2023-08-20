@@ -1,5 +1,4 @@
 import { useState, createContext, useContext, useEffect } from "react";
-import { useParams } from "react-router-dom";
 const url = "http://localhost:9000";
 
 const CitiesProvider = createContext("");

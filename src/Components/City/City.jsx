@@ -20,7 +20,7 @@ function City() {
       <h3>{currentCity.city_name}</h3>
       <h5 className={Styles.badge}>{currentCity.country}</h5>
       <br />
-      <p>{`Here is last visitors think about: ${currentCity.city_name}: `}</p>
+      <p>{`Here is last visitors think about ${currentCity.city_name}: `}</p>
       <p className={Styles.comment}>{currentCity.comment}</p>
       <button className={Styles.btn__back} onClick={() => navigate(-1)}>
         Get back to city list
