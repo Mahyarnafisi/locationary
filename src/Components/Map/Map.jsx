@@ -1,10 +1,11 @@
 import { useSearchParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
-import Styles from "./Map.module.css";
 import { useCities } from "../../Contexts/CitiesContext";
+import Styles from "./Map.module.css";
+
 function Map() {
-  const { cities } = useCities();
+  const { cities, currentCity } = useCities();
   const [searchParams, setSearchParams] = useSearchParams();
   const [mapPosition, setMapPosition] = useState([55.7047, 13.191]);
 
@@ -17,9 +18,12 @@ function Map() {
 
   return (
     <div className={Styles.mapContainer}>
-      <div className={Styles.locationCard}>
-        <p>Positions: lat:- lng:</p>
-      </div>
+      {currentCity.city_name && (
+        <div className={Styles.locationCard}>
+          <h4>{currentCity.city_name}</h4>
+        </div>
+      )}
+
       <MapContainer center={mapPosition} zoom={12} scrollWheelZoom={true} className={Styles.map}>
         <TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png" />
 
