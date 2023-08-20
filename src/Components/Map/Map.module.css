@@ -22,5 +22,22 @@
   /* position: absolute;
   top: 0;
   left: 0; */
+
   z-index: 99;
+}
+:global(.leaflet-popup-content-wrapper) {
+  background-color: var(--gray);
+  color: white;
+  border-radius: 0.6rem;
+}
+
+:global(.leaflet-popup-content) {
+  font-size: 1.6rem;
+}
+
+:global(.leaflet-popup-tip) {
+  background-color: var(--gray);
+}
+
+:global(.leaflet-popup-close-button) {
 }
