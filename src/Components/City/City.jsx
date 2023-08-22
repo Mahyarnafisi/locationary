@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { motion } from "framer-motion";
 
 import { useCities } from "../../Contexts/CitiesContext";
 import { useParams, useNavigate } from "react-router-dom";
@@ -18,7 +19,7 @@ function City() {
   if (isLoading) return <Spinner />;
 
   return (
-    <div className={Styles.city}>
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className={Styles.city}>
       <h3>{currentCity.city_name}</h3>
       <h5 className={Styles.badge}>{currentCity.country}</h5>
       <br />
@@ -28,7 +29,7 @@ function City() {
       <button className={Styles.btn__back} onClick={() => navigate(-1)}>
         Get back to city list
       </button>
-    </div>
+    </motion.div>
   );
 }
 

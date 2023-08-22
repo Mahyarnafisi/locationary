@@ -77,7 +77,8 @@
       "position": {
         "lat": 30.3666,
         "lng": 48.2755
-      }
+      },
+      "id": 8
     },
     {
       "city_name": "Lund",
@@ -87,7 +88,7 @@
         "lat": "55.67139748235567",
         "lng": "13.564462196536178"
       },
-      "id": 8
+      "id": 9
     },
     {
       "city_name": "Oslo",
@@ -97,7 +98,7 @@
         "lat": "59.90230521462405",
         "lng": "10.745904052004468"
       },
-      "id": 9
+      "id": 10
     },
     {
       "city_name": "Coffs Harbour",
@@ -107,7 +108,7 @@
         "lat": "-30.294672045213773",
         "lng": "153.14472140736498"
       },
-      "id": 10
+      "id": 11
     },
     {
       "city_name": "Shiraz",
@@ -117,7 +118,7 @@
         "lat": "29.599730543583938",
         "lng": "52.53366662320547"
       },
-      "id": 11
+      "id": 12
     },
     {
       "city_name": "Lomma",
@@ -127,7 +128,7 @@
         "lat": "55.720920152635955",
         "lng": "13.016350684591666"
       },
-      "id": 12
+      "id": 13
     },
     {
       "city_name": "Helsingborg",
@@ -137,7 +138,47 @@
         "lat": "56.042142901635295",
         "lng": "12.70832693808041"
       },
-      "id": 13
+      "id": 14
+    },
+    {
+      "city_name": "Berlin",
+      "country": "Germany",
+      "comment": "Modern City with a lot of places to visit.",
+      "position": {
+        "lat": "52.51200397321958",
+        "lng": "13.383842604109113"
+      },
+      "id": 15
+    },
+    {
+      "city_name": "Gotland",
+      "country": "Sweden",
+      "comment": "",
+      "position": {
+        "lat": "57.478127317469315",
+        "lng": "18.50623222612031"
+      },
+      "id": 16
+    },
+    {
+      "city_name": "Kuwait City",
+      "country": "Kuwait",
+      "comment": "rich people's city there, you should visit.",
+      "position": {
+        "lat": "29.318713366700813",
+        "lng": "47.992284725646485"
+      },
+      "id": 17
+    },
+    {
+      "city_name": "Nuuk",
+      "country": "Greenland",
+      "comment": "cold as fuck",
+      "position": {
+        "lat": "64.31554834974013",
+        "lng": "-50.89575776421862"
+      },
+      "id": 18
     }
   ]
 }

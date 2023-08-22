@@ -1,4 +1,5 @@
 import Styles from "./Form.module.css";
+import { motion } from "framer-motion";
 import ReactDatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import Button from "../Button/Button";
@@ -66,14 +67,13 @@ function Form() {
   if (geocodingError) return <Message message={geocodingError} />;
 
   return (
-    <form className={Styles.form} onSubmit={onSubmitHandler}>
+    <motion.form initial={{ opacity: 0 }} animate={{ opacity: 1 }} className={Styles.form} onSubmit={onSubmitHandler}>
       <div className={Styles.row}>
         <label htmlFor="cityName">City Name:</label>
         <input id="cityName" type="text" onChange={(e) => setCityName(e.target.value)} value={cityName} />
       </div>
       <div className={Styles.row}>
         <label htmlFor="date">Date:</label>
-        {/* <input id="Date" type="text" onChange={(e) => setDate(e.target.value)} value={date} /> */}
         <ReactDatePicker id="date" className={Styles.datePicker} dateFormat="dd/MM/yyyy HH:mm:ss " selected={date} onChange={(e) => setDate(e)} />
       </div>
       <div className={Styles.row}>
@@ -92,7 +92,7 @@ function Form() {
         </Button>
         <Button type="primary">Add</Button>
       </div>
-    </form>
+    </motion.form>
   );
 }
 

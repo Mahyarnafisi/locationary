@@ -4,6 +4,11 @@ import Styles from "./CityItem.module.css";
 function CityItem({ city }) {
   const { city_name, id, country, position } = city;
 
+  const onDeleteHandler = (e) => {
+    e.preventDefault();
+    console.log(e);
+  };
+
   return (
     <div>
       <Link className={Styles.cityItem} to={`${id}?lat=${position.lat}&lng=${position.lng}`}>
@@ -11,7 +16,7 @@ function CityItem({ city }) {
           {id}. {city_name}
         </p>
         <p className={Styles.country}>{country}</p>
-        <button className={Styles.deleteBtn}>
+        <button className={Styles.deleteBtn} onClick={onDeleteHandler}>
           <i class="bi bi-x"></i>
         </button>
       </Link>
