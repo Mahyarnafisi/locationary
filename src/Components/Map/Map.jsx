@@ -1,11 +1,12 @@
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup, useMap, useMapEvent, useMapEvents } from "react-leaflet";
 import { useCities } from "../../Contexts/CitiesContext";
 import Styles from "./Map.module.css";
+import Spinner from "../Spinner/Spinner";
 
 function Map() {
-  const { cities, currentCity } = useCities();
+  const { cities, currentCity, isLoading } = useCities();
   const [searchParams, setSearchParams] = useSearchParams();
   const [mapPosition, setMapPosition] = useState([55.7047, 13.191]);
 
@@ -18,12 +19,9 @@ function Map() {
 
   return (
     <div className={Styles.mapContainer}>
-      {currentCity.city_name && (
-        <div className={Styles.locationCard}>
-          <h4>{currentCity.city_name}</h4>
-        </div>
-      )}
+      {currentCity.city_name && <div className={Styles.locationCard}>{isLoading ? <Spinner /> : <h4>{currentCity.city_name}</h4>}</div>}
 
+      {/* Leaftlet Map */}
       <MapContainer center={mapPosition} zoom={12} scrollWheelZoom={true} className={Styles.map}>
         <TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png" />
 
@@ -42,15 +40,28 @@ function Map() {
             </Marker>
           );
         })}
+        <DetectClick />
         <ChangeCenter position={mapPosition} />
       </MapContainer>
     </div>
   );
 }
+// custom components fro changing location automatic
 function ChangeCenter({ position }) {
   const map = useMap();
   map.setView(position);
   return null;
+}
+
+// Custom function for opening th new form on click
+function DetectClick() {
+  const navigate = useNavigate();
+
+  useMapEvents({
+    click: (e) => {
+      navigate(`form?lat=${e.latlng.lat}&lng=${e.latlng.lng}`);
+    },
+  });
 }
 
 export default Map;
