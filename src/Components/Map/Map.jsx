@@ -1,17 +1,16 @@
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { MapContainer, TileLayer, Marker, Popup, useMap, useMapEvent, useMapEvents } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup, useMap, useMapEvents } from "react-leaflet";
 import { useCities } from "../../Contexts/CitiesContext";
 import Styles from "./Map.module.css";
 import Spinner from "../Spinner/Spinner";
+import { useUrlLocation } from "../../Hooks/useUrlLocation";
 
 function Map() {
   const { cities, currentCity, isLoading } = useCities();
-  const [searchParams, setSearchParams] = useSearchParams();
   const [mapPosition, setMapPosition] = useState([55.7047, 13.191]);
-
-  let lat = searchParams.get("lat");
-  let lng = searchParams.get("lng");
+  // Custom Hook
+  const [lat, lng] = useUrlLocation();
 
   useEffect(() => {
     if (lat && lng) setMapPosition([lat, lng]);

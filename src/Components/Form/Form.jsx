@@ -1,15 +1,38 @@
 import Styles from "./Form.module.css";
 import Button from "../Button/Button";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useUrlLocation } from "../../Hooks/useUrlLocation";
+const BASE_URL = "https://api.bigdatacloud.net/data/reverse-geocode-client";
 
 function Form() {
+  const [isLoadingGeocode, setIsLoadingGeocode] = useState(false);
   const [cityName, setCityName] = useState("");
   const [country, setCountry] = useState("");
   const [date, setDate] = useState(new Date());
   const [comment, setComment] = useState("");
-
   const navigate = useNavigate();
+  // custom hook
+  const [lat, lng] = useUrlLocation();
+
+  // FETCH DATA FROM REVERSE GEO LOCATION
+  useEffect(() => {
+    async function fetchingClickedPosition() {
+      setIsLoadingGeocode(true);
+      try {
+        const res = await fetch(`${BASE_URL}?latitude=${lat}&longitude=${lng}&localityLanguage=en`);
+        const data = await res.json();
+        console.log(data);
+        setCityName(data.city || "");
+        setCountry(data.countryName || "");
+      } catch (error) {
+        console.log("error");
+      } finally {
+        setIsLoadingGeocode(false);
+      }
+    }
+    fetchingClickedPosition();
+  }, [lat, lng]);
 
   return (
     <form className={Styles.form}>
