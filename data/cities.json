@@ -77,8 +77,67 @@
       "position": {
         "lat": 30.3666,
         "lng": 48.2755
+      }
+    },
+    {
+      "city_name": "Lund",
+      "country": "Sweden",
+      "comment": "a",
+      "position": {
+        "lat": "55.67139748235567",
+        "lng": "13.564462196536178"
       },
       "id": 8
+    },
+    {
+      "city_name": "Oslo",
+      "country": "Norway",
+      "comment": "Perfect place to have fun with family members and see amazing places and parks.",
+      "position": {
+        "lat": "59.90230521462405",
+        "lng": "10.745904052004468"
+      },
+      "id": 9
+    },
+    {
+      "city_name": "Coffs Harbour",
+      "country": "Australia",
+      "comment": "Great city",
+      "position": {
+        "lat": "-30.294672045213773",
+        "lng": "153.14472140736498"
+      },
+      "id": 10
+    },
+    {
+      "city_name": "Shiraz",
+      "country": "Iran (Islamic Republic of)",
+      "comment": "shahre khuban",
+      "position": {
+        "lat": "29.599730543583938",
+        "lng": "52.53366662320547"
+      },
+      "id": 11
+    },
+    {
+      "city_name": "Lomma",
+      "country": "Sweden",
+      "comment": "nice beach very nice place",
+      "position": {
+        "lat": "55.720920152635955",
+        "lng": "13.016350684591666"
+      },
+      "id": 12
+    },
+    {
+      "city_name": "Helsingborg",
+      "country": "Sweden",
+      "comment": "lovely place.",
+      "position": {
+        "lat": "56.042142901635295",
+        "lng": "12.70832693808041"
+      },
+      "id": 13
     }
   ]
 }
