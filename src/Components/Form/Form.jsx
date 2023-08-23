@@ -48,7 +48,7 @@ function Form() {
   //
 
   // Submission form handler
-  const onSubmitHandler = (e) => {
+  async function onSubmitHandler(e) {
     e.preventDefault();
     if (!cityName || !date) return;
     const newCity = {
@@ -58,9 +58,9 @@ function Form() {
       position: { lat, lng },
     };
 
-    createCity(newCity);
-    // navigate("/app/cities");
-  };
+    await createCity(newCity);
+    navigate("/app/cities");
+  }
 
   // In case of clicking nowhere :)
   if (geocodingError) return <Message message={geocodingError} />;

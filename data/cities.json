@@ -359,6 +359,26 @@
         "lng": "-71.87456642369824"
       },
       "id": 36
+    },
+    {
+      "city_name": "Paris",
+      "country": "France",
+      "comment": "beautiful place to visit",
+      "position": {
+        "lat": "48.84852324865152",
+        "lng": "2.3427668458674415"
+      },
+      "id": 37
+    },
+    {
+      "city_name": "Greater London",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "comment": "",
+      "position": {
+        "lat": "51.49344317994118",
+        "lng": "-0.11827683356884222"
+      },
+      "id": 38
     }
   ]
 }
