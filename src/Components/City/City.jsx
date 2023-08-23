@@ -23,8 +23,16 @@ function City() {
       <h3>{currentCity.city_name}</h3>
       <h5 className={Styles.badge}>{currentCity.country}</h5>
       <br />
-      <p>{`Here is last visitors think about ${currentCity.city_name}: `}</p>
-      <p className={Styles.comment}>{currentCity.comment}</p>
+
+      {currentCity.comment === "" ? (
+        <p>There is no comment yet</p>
+      ) : (
+        <>
+          <p>{`Here is last visitors think about ${currentCity.city_name}: `}</p>
+          <p className={Styles.comment}>{currentCity.comment}</p>
+        </>
+      )}
+
       <Wiki />
       <button className={Styles.btn__back} onClick={() => navigate(-1)}>
         Get back to city list

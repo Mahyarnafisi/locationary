@@ -1,4 +1,3 @@
-import { useCities } from "../../Contexts/CitiesContext";
 import { Link } from "react-router-dom";
 import Styles from "./CityItem.module.css";
 function CityItem({ city }) {

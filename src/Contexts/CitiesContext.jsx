@@ -58,7 +58,7 @@ function CitiesContext({ children }) {
       });
 
       const data = await res.json();
-      setCities([...cities, data]);
+      setCities((prev) => [...prev, data]);
     } catch (error) {
       console.log("error");
     } finally {

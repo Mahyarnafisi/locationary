@@ -47,3 +47,12 @@
 .datePicker {
   width: 100%;
 }
+
+.formLoading {
+  background-color: rgba(240, 240, 240, 0.171);
+  filter: grayscale(100%);
+  opacity: 30%;
+}
+
+fieldset {
+}

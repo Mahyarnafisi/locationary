@@ -1,5 +1,4 @@
 import Styles from "./Form.module.css";
-import { motion } from "framer-motion";
 import ReactDatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import Button from "../Button/Button";
@@ -11,7 +10,7 @@ import { useCities } from "../../Contexts/CitiesContext";
 const BASE_URL = "https://api.bigdatacloud.net/data/reverse-geocode-client";
 
 function Form() {
-  const { createCity } = useCities();
+  const { createCity, isLoading } = useCities();
   const [isLoadingGeocode, setIsLoadingGeocode] = useState("");
   const [geocodingError, setGeocodingError] = useState(false);
   const [cityName, setCityName] = useState("");
@@ -60,14 +59,14 @@ function Form() {
     };
 
     createCity(newCity);
-    navigate("/app/cities");
+    // navigate("/app/cities");
   };
 
   // In case of clicking nowhere :)
   if (geocodingError) return <Message message={geocodingError} />;
 
   return (
-    <motion.form initial={{ opacity: 0 }} animate={{ opacity: 1 }} className={Styles.form} onSubmit={onSubmitHandler}>
+    <form className={`${Styles.form} ${isLoading ? Styles.formLoading : ""}`} onSubmit={onSubmitHandler}>
       <div className={Styles.row}>
         <label htmlFor="cityName">City Name:</label>
         <input id="cityName" type="text" onChange={(e) => setCityName(e.target.value)} value={cityName} />
@@ -92,7 +91,7 @@ function Form() {
         </Button>
         <Button type="primary">Add</Button>
       </div>
-    </motion.form>
+    </form>
   );
 }
 

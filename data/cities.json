@@ -179,6 +179,186 @@
         "lng": "-50.89575776421862"
       },
       "id": 18
+    },
+    {
+      "city_name": "Washington",
+      "country": "United States of America (the)",
+      "comment": "Big city, nice people and aswesome food you can fine what ever you are looking for, and fuck everyone you like what ever you see and trty i s nice",
+      "position": {
+        "lat": "38.90815550871138",
+        "lng": "-76.81825812154861"
+      },
+      "id": 19
+    },
+    {
+      "city_name": "Ust-Kamenogorsk",
+      "country": "Kazakhstan",
+      "comment": "",
+      "position": {
+        "lat": "49.95343001274107",
+        "lng": "82.61987424475952"
+      },
+      "id": 20
+    },
+    {
+      "city_name": "Torshavn",
+      "country": "Faroe Islands (the)",
+      "comment": "Cold city with beautiful views and tourist spot",
+      "position": {
+        "lat": "62.01033419496086",
+        "lng": "-6.771273593310882"
+      },
+      "id": 21
+    },
+    {
+      "city_name": "Halmstad",
+      "country": "Sweden",
+      "comment": "",
+      "position": {
+        "lat": "56.67061847281064",
+        "lng": "12.86479889963583"
+      },
+      "id": 22
+    },
+    {
+      "city_name": "Tokyo",
+      "country": "Japan",
+      "comment": "",
+      "position": {
+        "lat": "35.728759245491105",
+        "lng": "139.81161187368065"
+      },
+      "id": 23
+    },
+    {
+      "city_name": "Al Kharjah",
+      "country": "Egypt",
+      "comment": "",
+      "position": {
+        "lat": "24.13066999112861",
+        "lng": "30.1341270918742"
+      },
+      "id": 24
+    },
+    {
+      "city_name": "In Salah",
+      "country": "Algeria",
+      "comment": "",
+      "position": {
+        "lat": "27.60697466361676",
+        "lng": "2.6247809411904393"
+      },
+      "id": 25
+    },
+    {
+      "city_name": "Chingueṭṭi",
+      "country": "Mauritania",
+      "comment": "",
+      "position": {
+        "lat": "20.053027230476246",
+        "lng": "-9.413773767821093"
+      },
+      "id": 26
+    },
+    {
+      "city_name": "Mangochi",
+      "country": "Malawi",
+      "comment": "perfect city",
+      "position": {
+        "lat": "-14.532886908280846",
+        "lng": "34.88922555719575"
+      },
+      "id": 27
+    },
+    {
+      "city_name": "Riyadh",
+      "country": "Saudi Arabia",
+      "comment": "",
+      "position": {
+        "lat": "24.657822890457457",
+        "lng": "46.81209086315625"
+      },
+      "id": 28
+    },
+    {
+      "city_name": "Medina",
+      "country": "Saudi Arabia",
+      "comment": "",
+      "position": {
+        "lat": "24.44713265872715",
+        "lng": "39.68165279991338"
+      },
+      "id": 29
+    },
+    {
+      "city_name": "Cairo",
+      "country": "Egypt",
+      "comment": "",
+      "position": {
+        "lat": "30.049208981074113",
+        "lng": "31.266277515603015"
+      },
+      "id": 30
+    },
+    {
+      "city_name": "Sabha",
+      "country": "Libya",
+      "comment": "",
+      "position": {
+        "lat": "26.952961785203108",
+        "lng": "14.390671785574158"
+      },
+      "id": 31
+    },
+    {
+      "city_name": "Bamako",
+      "country": "Mali",
+      "comment": "",
+      "position": {
+        "lat": "12.59713384142535",
+        "lng": "-7.944857397256278"
+      },
+      "id": 32
+    },
+    {
+      "city_name": "Abuja",
+      "country": "Nigeria",
+      "comment": "",
+      "position": {
+        "lat": "8.970378808490482",
+        "lng": "7.37237658799844"
+      },
+      "id": 33
+    },
+    {
+      "city_name": "Durazno",
+      "country": "Uruguay",
+      "comment": "",
+      "position": {
+        "lat": "-33.44986796684801",
+        "lng": "-56.50365517789058"
+      },
+      "id": 34
+    },
+    {
+      "city_name": "Villa Krause",
+      "country": "Argentina",
+      "comment": "",
+      "position": {
+        "lat": "-31.57782594338563",
+        "lng": "-68.52458578106358"
+      },
+      "id": 35
+    },
+    {
+      "city_name": "Coyhaique",
+      "country": "Chile",
+      "comment": "",
+      "position": {
+        "lat": "-45.541254586614144",
+        "lng": "-71.87456642369824"
+      },
+      "id": 36
     }
   ]
 }
