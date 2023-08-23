@@ -18,10 +18,11 @@ function Map() {
 
   return (
     <div className={Styles.mapContainer}>
-      {currentCity.city_name && <div className={Styles.locationCard}>{isLoading ? <Spinner /> : <h4>{currentCity.city_name}</h4>}</div>}
+      {/* Location card on the map */}
+      {currentCity.city_name && <div className={Styles.locationCard}>{isLoading ? <Spinner /> : <h4>{currentCity.city_name.charAt(0).toUpperCase() + currentCity.city_name.slice(1)}</h4>}</div>}
 
       {/* Leaftlet Map */}
-      <MapContainer center={mapPosition} zoom={12} scrollWheelZoom={true} className={Styles.map}>
+      <MapContainer center={mapPosition} maxZoom={15} minZoom={8} zoom={10} scrollWheelZoom={true} className={Styles.map}>
         <TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png" />
 
         {cities.map((city) => {

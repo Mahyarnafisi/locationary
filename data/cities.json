@@ -379,6 +379,56 @@
         "lng": "-0.11827683356884222"
       },
       "id": 38
+    },
+    {
+      "city_name": "Rome",
+      "country": "Italy",
+      "comment": "",
+      "position": {
+        "lat": "41.87972855348812",
+        "lng": "12.473530903619967"
+      },
+      "id": 39
+    },
+    {
+      "city_name": "Mexico City",
+      "country": "Mexico",
+      "comment": "",
+      "position": {
+        "lat": "19.481385712375666",
+        "lng": "-99.05904793402328"
+      },
+      "id": 40
+    },
+    {
+      "city_name": "Morbylanga",
+      "country": "Sweden",
+      "comment": "",
+      "position": {
+        "lat": "56.52370209832186",
+        "lng": "16.386072854039316"
+      },
+      "id": 41
+    },
+    {
+      "city_name": "Copenhagen",
+      "country": "Denmark",
+      "comment": "",
+      "position": {
+        "lat": "55.68459359893798",
+        "lng": "12.566220812251075"
+      },
+      "id": 42
+    },
+    {
+      "city_name": "Horni Paseka",
+      "country": "Czechia",
+      "comment": "",
+      "position": {
+        "lat": "49.62694802937658",
+        "lng": "15.278791997027572"
+      },
+      "id": 43
     }
   ]
 }

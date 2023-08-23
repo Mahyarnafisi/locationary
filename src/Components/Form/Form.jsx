@@ -10,7 +10,7 @@ import { useCities } from "../../Contexts/CitiesContext";
 const BASE_URL = "https://api.bigdatacloud.net/data/reverse-geocode-client";
 
 function Form() {
-  const { createCity, isLoading } = useCities();
+  const { createCity, isLoading, setCurrentCity } = useCities();
   const [isLoadingGeocode, setIsLoadingGeocode] = useState("");
   const [geocodingError, setGeocodingError] = useState(false);
   const [cityName, setCityName] = useState("");
@@ -60,6 +60,7 @@ function Form() {
 
     await createCity(newCity);
     navigate("/app/cities");
+    setCurrentCity(() => newCity);
   }
 
   // In case of clicking nowhere :)
